@@ -3,7 +3,9 @@ import React from "react";
 const ImageSlider = () => {
   return (
     <>
-      <div>Image</div>
+      {Data.map((slide, index) => {
+        return <img src={slide.image} alt={travel} />;
+      })}
     </>
   );
 };
