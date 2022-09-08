@@ -1,7 +1,7 @@
 import React from "react";
 
 const ImageSlider = () => {
-  return <div>ImageSlider</div>;
+  return <div>Image</div>;
 };
 
 export default ImageSlider;

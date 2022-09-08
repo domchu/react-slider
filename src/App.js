@@ -1,11 +1,8 @@
 import "./App.css";
+import ImageSlider from "./Components/ImageSlider";
 
 function App() {
-  return (
-    <div className="App">
-      <h1>slider</h1>
-    </div>
-  );
+  return <ImageSlider />;
 }
 
 export default App;
