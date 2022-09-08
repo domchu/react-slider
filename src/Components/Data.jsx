@@ -1,5 +1,5 @@
 export const Data = [
-  {
-    image: "",
-  },
+  //   {
+  //     image: "../../public/images/slider1",
+  //   },
 ];
