@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import Data from "./Data";
 
 const ImageSlider = () => {
+  const [current, setCount] = useState(0);
+
   return (
     <>
       {Data.map((slide, index) => {
