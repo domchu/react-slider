@@ -3,6 +3,7 @@ import Data from "./Data";
 
 const ImageSlider = () => {
   const [current, setCount] = useState(0);
+  const length = slides.length;
 
   return (
     <>
