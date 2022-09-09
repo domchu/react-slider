@@ -26,13 +26,18 @@ const ImageSlider = (slides) => {
       <BsFillArrowRightSquareFill className="right-arrow" onClick={nextSlide} />
       {Data.map((slide, index) => {
         return (
-          <div className={index === current ? "slide active" : "slide"}>
-            <img
-              src={slide}
-              alt="travel"
-              key={index}
-              className="slider-image"
-            />
+          <div
+            className={index === current ? "slide active" : "slide"}
+            key={index}
+          >
+            {index === current && (
+              <img
+                src={slide}
+                alt="travel"
+                key={index}
+                className="slider-image"
+              />
+            )}
           </div>
         );
       })}
