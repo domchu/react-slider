@@ -8,13 +8,15 @@ const ImageSlider = () => {
   // const length = slides.length;
 
   return (
-    <>
+    <section className="slider">
+      <BsFillArrowLeftSquareFill className="left-arrow" onClick={prev} />
+      <BsFillArrowRightSquareFill className="right-arrow" onClick={next} />
       {Data.map((slide, index) => {
         return (
           <img src={slide} alt="travel" key={index} className="slider-image" />
         );
       })}
-    </>
+    </section>
   );
 };
 
