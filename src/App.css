@@ -3,7 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+.slider-image {
+  width: 1000px;
+  height: 600px;
+}
 .slider-image {
   position: relative;
   display: flex;
