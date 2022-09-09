@@ -7,22 +7,33 @@ const ImageSlider = (slides) => {
   const [current, setCount] = useState(0);
   const length = slides.length;
 
-  const next = () => {
-    setCount(current === length - 1 ? 0 : current + 1);)
-  }
+  const nextSlide = () => {
+    setCount(current === length - 1 ? 0 : current + 1);
+  };
 
+  const prevSlide = () => {
+    setCount(current === 0 ? length - 1 : current - 1);
+  };
+  // console.log(current);
 
-  if (!Array.isArray(slides) || length <= 0) {
-    return null;
-  }
+  // if (!Array.isArray(slides) || length <= 0) {
+  //   return null;
+  // }
 
   return (
     <section className="slider">
-      <BsFillArrowLeftSquareFill className="left-arrow" />
-      <BsFillArrowRightSquareFill className="right-arrow" />
+      <BsFillArrowLeftSquareFill className="left-arrow" onClick={prevSlide} />
+      <BsFillArrowRightSquareFill className="right-arrow" onClick={nextSlide} />
       {Data.map((slide, index) => {
         return (
-          <img src={slide} alt="travel" key={index} className="slider-image" />
+          <div className={index === current ? "slide active" : "slide"}>
+            <img
+              src={slide}
+              alt="travel"
+              key={index}
+              className="slider-image"
+            />
+          </div>
         );
       })}
     </section>
