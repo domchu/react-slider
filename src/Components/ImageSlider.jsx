@@ -7,6 +7,15 @@ const ImageSlider = (slides) => {
   const [current, setCount] = useState(0);
   const length = slides.length;
 
+  const next = () => {
+    setCount(current === length - 1 ? 0 : current + 1);)
+  }
+
+
+  if (!Array.isArray(slides) || length <= 0) {
+    return null;
+  }
+
   return (
     <section className="slider">
       <BsFillArrowLeftSquareFill className="left-arrow" />
