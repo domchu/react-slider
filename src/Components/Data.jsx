@@ -1,12 +1,36 @@
 import Assets from "../Components/Constants/Assets";
 
-const Date = [
+const Data = [
   {
-    images: "",
+    images: "./images/slider1.jpg",
+  },
+  {
+    images: "./images/slider2.jpg",
+  },
+  {
+    images: "./images/slider3.jpg",
+  },
+  {
+    images: "./images/slider4.jpg",
+  },
+  {
+    images: "./images/slider5.jpg",
+  },
+  {
+    images: "./images/slider6.jpg",
+  },
+  {
+    images: "./images/slider7.jpg",
+  },
+  {
+    images: "./images/slider8.jpg",
+  },
+  {
+    images: "./images/slider9.jpg",
   },
 ];
 export default Data;
-
+//end the
 // import slider1 from "./images/slider1.jpg";
 // import slider2 from "./images/slider2.jpg";
 // import slider3 from "./images/slider3.jpg";

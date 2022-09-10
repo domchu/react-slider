@@ -8,7 +8,7 @@ import slider7 from "./images/slider7.jpg";
 import slider8 from "./images/slider8.jpg";
 import slider9 from "./images/slider9.jpg";
 
-const Data = [
+const Assets = [
   slider1,
   slider2,
   slider3,
@@ -20,4 +20,4 @@ const Data = [
   slider9,
 ];
 
-export default Data;
+export default Assets;
