@@ -1,30 +1,30 @@
 const Data = [
   {
-    Image: "Image/slider1.jpg",
+    image: "image/slider1.jpg",
   },
   {
-    Image: "Image/slider2.jpg",
+    image: "image/slider2.jpg",
   },
   {
-    Image: "./Image/slider3.jpg",
+    image: "./image/slider3.jpg",
   },
   {
-    Image: "./Image/slider4.jpg",
+    image: "./image/slider4.jpg",
   },
   {
-    Image: "./Image/slider5.jpg",
+    image: "./image/slider5.jpg",
   },
   {
-    Image: "./Image/slider6.jpg",
+    image: "./image/slider6.jpg",
   },
   {
-    Image: "./Image/slider7.jpg",
+    image: "./image/slider7.jpg",
   },
   {
-    Image: "./Image/slider8.jpg",
+    image: "./image/slider8.jpg",
   },
   {
-    Image: "./Image/slider9.jpg",
+    image: "./image/slider9.jpg",
   },
 ];
 export default Data;
