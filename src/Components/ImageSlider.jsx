@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Data from "./Data";
 import { BsFillArrowRightSquareFill } from "react-icons/bs";
 import { BsFillArrowLeftSquareFill } from "react-icons/bs";
+import Data from "./Data";
 
 const ImageSlider = (slides) => {
   const [current, setCount] = useState(0);
@@ -32,7 +32,7 @@ const ImageSlider = (slides) => {
           >
             {index === current && (
               <img
-                src={slide.image}
+                src={slide.images}
                 alt="travel"
                 key={index}
                 className="slider-image"
