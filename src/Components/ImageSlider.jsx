@@ -32,7 +32,7 @@ const ImageSlider = (slides) => {
           >
             {index === current && (
               <img
-                src={slide.images}
+                src={slide.image}
                 alt="travel"
                 key={index}
                 className="slider-image"
