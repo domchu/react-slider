@@ -14,7 +14,7 @@ const ImageSlider = (slides) => {
   const prevSlide = () => {
     setCount(current === 0 ? length - 1 : current - 1);
   };
-  console.log(current);
+  // console.log(current);
 
   // if (!Array.isArray(slides) || length <= 0) {
   //   return null;
@@ -25,6 +25,7 @@ const ImageSlider = (slides) => {
       <BsFillArrowLeftSquareFill className="left-arrow" onClick={prevSlide} />
       <BsFillArrowRightSquareFill className="right-arrow" onClick={nextSlide} />
       {Data.map((slide, index) => {
+        console.log(slide.image);
         return (
           <div
             className={index === current ? "slide active" : "slide"}
