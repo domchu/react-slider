@@ -4,15 +4,15 @@ import { BsFillArrowLeftSquareFill } from "react-icons/bs";
 import Data from "./Data";
 
 const ImageSlider = (slides) => {
-  const [current, setCount] = useState(0);
+  const [current, setCurrent] = useState(0);
   const length = slides.length;
 
   const nextSlide = () => {
-    setCount(current === length - 1 ? 0 : current + 1);
+    setCurrent(current === length - 1 ? 0 : current + 1);
   };
 
   const prevSlide = () => {
-    setCount(current === 0 ? length - 1 : current - 1);
+    setCurrent(current === 0 ? length - 1 : current - 1);
   };
   // console.log(current);
 
