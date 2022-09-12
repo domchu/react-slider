@@ -24,7 +24,7 @@ const ImageSlider = (slides) => {
     <section className="slider">
       <BsFillArrowLeftSquareFill className="left-arrow" onClick={prevSlide} />
       <BsFillArrowRightSquareFill className="right-arrow" onClick={nextSlide} />
-      {Data.map((slide, index) => {
+      {[...Data].map((slide, index) => {
         console.log(slide.image);
         return (
           <div
