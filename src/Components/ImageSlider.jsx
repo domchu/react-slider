@@ -3,7 +3,7 @@ import { BsFillArrowRightSquareFill } from "react-icons/bs";
 import { BsFillArrowLeftSquareFill } from "react-icons/bs";
 import Data from "./Data";
 
-const ImageSlider = (slides) => {
+const ImageSlider = ({ slides }) => {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
 
@@ -14,18 +14,16 @@ const ImageSlider = (slides) => {
   const prevSlide = () => {
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
-  // console.log(current);
 
-  // if (!Array.isArray(slides) || length <= 0) {
-  //   return null;
-  // }
+  if (!Array.isArray(slides) || length <= 0) {
+    return null;
+  }
 
   return (
     <section className="slider">
       <BsFillArrowLeftSquareFill className="left-arrow" onClick={prevSlide} />
       <BsFillArrowRightSquareFill className="right-arrow" onClick={nextSlide} />
-      {[...Data].map((slide, index) => {
-        console.log(slide.image);
+      {Data.map((slide, index) => {
         return (
           <div
             className={index === current ? "slide active" : "slide"}
